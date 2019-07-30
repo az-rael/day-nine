@@ -1,0 +1,151 @@
+html {
+    background: 100% white;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#parent {
+    background-color: grey;
+    height: 500px;
+    width: 500px;
+    border: 5px solid black;
+    border-radius: 5%; 
+}
+
+.balls {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 7px;
+    animation: direction 5s linear 1s infinite alternate;
+}
+@keyframes direction {
+    from { transform: translate(0); }
+    to   { transform: translate(450px); }
+  }
+
+.balls1 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: plum;
+    margin: 7px;
+    -webkit-animation: MoveUpDown 5s linear  infinite alternate;
+    animation: MoveUpDown 5s linear  infinite alternate;
+}
+@-webkit-keyframes MoveUpDown {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(300px);}
+    100% {transform: translateX(300px);}
+}
+@keyframes MoveUpDown {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(300px);}
+    100% {transform: translateX(300px);}
+}
+.balls2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 7px;
+    animation: shine 5s linear infinite alternate;
+}
+@keyframes shine {
+    0% {
+        transform: translatex(0px) translatey(0px);
+    }
+    100% {
+        transform: translatex(300px) translatey(250px);
+    }
+}
+
+.balls3 {
+    height: 50px;
+    width: 50px;
+    border: 2px solid blue;
+
+    border-radius: 50%;
+    background-color: white;
+    margin: 7px;
+    -webkit-animation: balls3 5s linear infinite alternate;
+    animation: balls3 5s linear infinite alternate;
+}
+
+@-webkit-keyframes balls3 {
+    0%{ transform: translatex(20px) translatey(0px) scale(1);}
+    50% {transform: translatex(300px) translatey(250px)scale(-1);}
+    100% {transform: translatex(0px) translatey(0px) scale(1);}
+}
+
+
+.squares2 {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    margin: 7px;
+    border: 2px solid black;
+    transition: 5s;
+   animation: Square2 5s linear infinite alternate;
+   
+}
+
+@keyframes Square2 {
+    from {transform: translatex(100px) translatey(-200px) scale(1);}
+
+    to {transform: translatex(400px) translatey(100px) scale(1.5);}
+}
+
+.squares1 {
+    height: 50px;
+    width: 50px;
+    border: 2px solid red;
+    background-color: white;
+    margin: 7px;
+    transition: 5s;
+   animation: Square1 5s linear infinite alternate;
+   
+}
+@keyframes Square1 {
+    from {transform: translatex(200px) translatey(-300px);}
+
+    to {transform: translatex(450) translatey(100px);}
+}
+.squares3 {
+    height: 50px;
+    width: 50px;
+    background-color: salmon;
+    margin: 7px;
+    transition: 5s;
+    -webkit-animation: Square3 5s linear infinite alternate;
+   animation: Square3 5s linear infinite alternate;
+   
+}
+@-webkit-keyframes Square3 {
+    from {transform: translatex(400px) translatey(-300px);}
+
+    to {transform: translatex(250px) translatey(100px);}
+}
+@keyframes Square3 {
+    from {transform: translatex(400px) translatey(-300px);}
+
+    to {transform: translatex(250px) translatey(100px);}
+}
+.squares4 {
+    height: 50px;
+    width: 50px;
+    background-color: yellowgreen;
+    margin: 7px;
+    transition: 5s;
+   animation: Square4 5s linear infinite alternate;
+   
+}
+@keyframes Square4 {
+    from {transform: translatex(400px) translatey(-220px);}
+
+    to {transform: translatex(400) translatey(200px);}
+}
